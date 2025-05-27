@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - I & F ASSETS LIMITED</title>
+    <link rel="icon" href="https://placehold.co/32x32/008080/FFFFFF?text=IF" type="image/png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-brand': '#008080', // Teal/Greenish-Blue from logo
+                        'secondary-accent': '#2C3E50', // Dark Blue/Navy
+                        'accent-gold': '#F39C12', // Soft Gold/Light Orange
+                        'text-dark': '#333333', // Dark Grey for body text
+                        'text-light': '#7F8C8D', // Medium Grey for subtle text
+                        'bg-light': '#F8F8F8', // Off-White/Light Grey for backgrounds
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-bg-light text-text-dark">
+    <header class="bg-primary-brand text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between relative">
+            <h1 class="text-2xl font-display font-bold z-20">I & F ASSETS LIMITED</h1>
+
+            <nav id="desktop-nav" class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-accent-gold transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-accent-gold transition duration-300">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-accent-gold transition duration-300">Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-accent-gold transition duration-300">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-gold transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden text-white text-3xl focus:outline-none z-20">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="mobile-nav" class="hidden md:hidden fixed inset-0 bg-primary-brand/95 backdrop-blur-sm z-10 flex flex-col items-center justify-center space-y-8">
+                <ul class="flex flex-col space-y-6 text-2xl">
+                    <li><a href="index.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Home</a></li>
+                    <li><a href="about.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="services-hero" class="relative bg-secondary-accent text-white py-20 md:py-32 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://placehold.co/1920x1080/2C3E50/FFFFFF/png?text=Our+Expert+Services+Background'); background-size: cover; background-position: center;"></div>
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <h1 class="text-5xl md:text-7xl font-extrabold font-display leading-tight mb-4 animate-fade-in-up">
+                    Our <span class="text-accent-gold">Expert Services</span>
+                </h1>
+                <p class="text-xl md:text-2xl max-w-4xl mx-auto opacity-90 animate-fade-in-up animation-delay-300">
+                    Discover how I & F ASSETS LIMITED leverages its diverse expertise to deliver unparalleled value and accelerate your success.
+                </p>
+            </div>
+        </section>
+
+        <section id="service-details" class="py-16 bg-white shadow-lg -mt-8 relative z-10 rounded-lg mx-auto max-w-6xl px-6 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16 pb-8 border-b border-bg-light">
+                <div class="order-2 md:order-1 text-center md:text-left">
+                    <div class="text-primary-brand text-5xl mb-4"><i class="fa-solid fa-house-chimney-crack"></i></div>
+                    <h2 class="text-3xl font-bold text-secondary-accent mb-4">Property Development & Estate Management</h2>
+                    <p class="text-lg text-text-dark mb-4 leading-relaxed">
+                        We specialize in the full lifecycle of property, from initial design and development to meticulous estate management. Our expertise covers transforming undeveloped land into thriving communities and managing diverse real estate portfolios for optimal value. We act as property agents, real estate agents, and manage the acquisition, disposal, sale, assignment, transfer, and dealing in real assets of every description, both in Nigeria and globally[cite: 2, 3].
+                    </p>
+                    <p class="text-lg text-text-dark leading-relaxed">
+                        Our services extend to real estate maintenance, ensuring properties are preserved and enhanced, and we actively engage in the purchase, sale, letting, and disposal of both real and personal property[cite: 4].
+                    </p>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://placehold.co/600x400/008080/FFFFFF?text=Property+Development" alt="Property Development" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16 pb-8 border-b border-bg-light">
+                <div class="text-center md:text-left">
+                    <div class="text-primary-brand text-5xl mb-4"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h2 class="text-3xl font-bold text-secondary-accent mb-4">Strategic Investment Services</h2>
+                    <p class="text-lg text-text-dark mb-4 leading-relaxed">
+                        As a dedicated investment company, we provide strategic guidance and opportunities across various asset classes. We acquire and hold debentures, debenture stock, bonds, notes, obligations, warrants, options, and other securities issued or guaranteed by companies, governments, or public bodies worldwide[cite: 5].
+                    </p>
+                    <p class="text-lg text-text-dark leading-relaxed">
+                        Our team meticulously invests and deals with moneys in a manner that maximizes returns, while ensuring compliance with all legal frameworks. We also manage, alter, dispose of, and deal with investments to adapt to market dynamics and client objectives[cite: 5].
+                    </p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/2C3E50/F8F8F8?text=Investment+Services" alt="Investment Services" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16 pb-8 border-b border-bg-light">
+                <div class="order-2 md:order-1 text-center md:text-left">
+                    <div class="text-primary-brand text-5xl mb-4"><i class="fa-solid fa-hard-hat"></i></div>
+                    <h2 class="text-3xl font-bold text-secondary-accent mb-4">Construction & Infrastructure Development</h2>
+                    <p class="text-lg text-text-dark mb-4 leading-relaxed">
+                        We offer comprehensive construction services covering every description of work. This includes meticulous planning, renovation, contract projection, liaison, supervision, erection, improvement, repair, alteration, fabrication, maintenance, and demolition of construction works[cite: 6].
+                    </p>
+                    <p class="text-lg text-text-dark leading-relaxed">
+                        Our expertise as building contractors extends to designing, constructing, renovating, drafting, planning, and projecting all kinds of construction projects, delivering high-quality infrastructure solutions from conception to completion[cite: 6].
+                    </p>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://placehold.co/600x400/008080/FFFFFF?text=Construction+Infrastructure" alt="Construction Infrastructure" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16 pb-8 border-b border-bg-light">
+                <div class="text-center md:text-left">
+                    <div class="text-primary-brand text-5xl mb-4"><i class="fa-solid fa-hands-holding-circle"></i></div>
+                    <h2 class="text-3xl font-bold text-secondary-accent mb-4">Strategic Management & Procurement</h2>
+                    <p class="text-lg text-text-dark mb-4 leading-relaxed">
+                        We provide efficient and effective management and procurement services to streamline your operations. Our solutions are designed to optimize resource allocation, enhance supply chain efficiency, and ensure the timely and cost-effective sourcing of essential goods and services[cite: 7].
+                    </p>
+                    <p class="text-lg text-text-dark leading-relaxed">
+                        From operational oversight to strategic sourcing, we empower businesses to achieve greater efficiency and focus on their core competencies, fostering sustained growth.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/2C3E50/F8F8F8?text=Management+Procurement" alt="Management Procurement" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16 pb-8 border-b border-bg-light">
+                <div class="order-2 md:order-1 text-center md:text-left">
+                    <div class="text-primary-brand text-5xl mb-4"><i class="fa-solid fa-gem"></i></div>
+                    <h2 class="text-3xl font-bold text-secondary-accent mb-4">Mineral Resources Development & Supply</h2>
+                    <p class="text-lg text-text-dark mb-4 leading-relaxed">
+                        Our involvement in the mineral resources sector spans sales, mining, and supply. We are active miners of precious stones, gypsum, gold, tin, and other valuable minerals[cite: 8].
+                    </p>
+                    <p class="text-lg text-text-dark leading-relaxed">
+                        Our operations include developing, rendering workable, excavating, digging, tunneling, quarrying, and working mines and mineral supplies. Furthermore, we supply and deal in (or manufacture) excavators, limestone, marble, precious stones, and a range of other mineral products, contributing significantly to the resource sector[cite: 8, 9].
+                    </p>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://placehold.co/600x400/008080/FFFFFF?text=Mineral+Resources" alt="Mineral Resources" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center pb-8">
+                <div class="text-center md:text-left">
+                    <div class="text-primary-brand text-5xl mb-4"><i class="fa-solid fa-house-user"></i></div>
+                    <h2 class="text-3xl font-bold text-secondary-accent mb-4">Property Investment & Sales</h2>
+                    <p class="text-lg text-text-dark mb-4 leading-relaxed">
+                        We specialize in profitable property investments and sales across various categories, including land, residential houses, and commercial properties. We actively acquire, hold, improve, alter, develop, let, sell, or otherwise dispose of land, buildings, and real estate of any description[cite: 7].
+                    </p>
+                    <p class="text-lg text-text-dark leading-relaxed">
+                        Our expertise extends to general dealings in landed property, property management, and acting as property developers, general contractors, dealers, renovators, and suppliers, ensuring maximum returns and seamless transactions for our clients[cite: 8].
+                    </p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/2C3E50/F8F8F8?text=Property+Investment+Sales" alt="Property Investment & Sales" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center py-16 bg-primary-brand text-white rounded-lg shadow-xl mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold font-display mb-6">Ready to Explore Opportunities?</h2>
+            <p class="text-xl max-w-3xl mx-auto mb-10 opacity-90">
+                Our team of experts is ready to discuss your specific needs and how we can help you achieve your goals.
+            </p>
+            <a href="contact.html" class="inline-block bg-accent-gold text-white font-bold text-lg py-4 px-10 rounded-full shadow-lg hover:bg-opacity-90 transition duration-300 transform hover:-translate-y-1">
+                Contact Us Today <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </section>
+    </main>
+
+    <footer class="bg-secondary-accent text-white py-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 I & F ASSETS LIMITED. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0; /* Start invisible */
+        }
+        .animation-delay-300 {
+            animation-delay: 0.3s;
+        }
+        .animation-delay-600 {
+            animation-delay: 0.6s;
+        }
+    </style>
+</body>
+</html>

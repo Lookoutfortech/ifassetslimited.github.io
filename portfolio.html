@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio - I & F ASSETS LIMITED</title>
+    <link rel="icon" href="https://placehold.co/32x32/008080/FFFFFF?text=IF" type="image/png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-brand': '#008080', // Teal/Greenish-Blue from logo
+                        'secondary-accent': '#2C3E50', // Dark Blue/Navy
+                        'accent-gold': '#F39C12', // Soft Gold/Light Orange
+                        'text-dark': '#333333', // Dark Grey for body text
+                        'text-light': '#7F8C8D', // Medium Grey for subtle text
+                        'bg-light': '#F8F8F8', // Off-White/Light Grey for backgrounds
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-bg-light text-text-dark">
+    <header class="bg-primary-brand text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between relative">
+            <h1 class="text-2xl font-display font-bold z-20">I & F ASSETS LIMITED</h1>
+
+            <nav id="desktop-nav" class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-accent-gold transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-accent-gold transition duration-300">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-accent-gold transition duration-300">Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-accent-gold transition duration-300">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-gold transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden text-white text-3xl focus:outline-none z-20">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="mobile-nav" class="hidden md:hidden fixed inset-0 bg-primary-brand/95 backdrop-blur-sm z-10 flex flex-col items-center justify-center space-y-8">
+                <ul class="flex flex-col space-y-6 text-2xl">
+                    <li><a href="index.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Home</a></li>
+                    <li><a href="about.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="portfolio-hero" class="relative bg-secondary-accent text-white py-20 md:py-32 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://placehold.co/1920x1080/008080/FFFFFF/png?text=Showcase+Background'); background-size: cover; background-position: center;"></div>
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <h1 class="text-5xl md:text-7xl font-extrabold font-display leading-tight mb-4 animate-fade-in-up">
+                    Our <span class="text-accent-gold">Completed Projects</span>
+                </h1>
+                <p class="text-xl md:text-2xl max-w-4xl mx-auto opacity-90 animate-fade-in-up animation-delay-300">
+                    Explore a selection of our successful ventures across property, construction, and investment, showcasing our commitment to excellence.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects-grid" class="py-16 bg-white shadow-lg -mt-8 relative z-10 rounded-lg mx-auto max-w-6xl px-6 mb-12">
+            <h2 class="text-4xl font-bold text-center text-secondary-accent mb-6">Featured Projects</h2>
+            <p class="text-xl text-text-dark mb-12 max-w-3xl mx-auto text-center">
+                From residential developments to strategic infrastructure and key investments, our portfolio reflects our diverse capabilities.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-bg-light rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 duration-300 group">
+                    <img src="https://placehold.co/600x400/2C3E50/F8F8F8?text=Project+Alpha" alt="Project Alpha" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-secondary-accent mb-2">Luxury Residential Estate</h3>
+                        <p class="text-primary-brand text-sm mb-3">Property Development | Abuja, Nigeria</p>
+                        <p class="text-text-dark text-base leading-relaxed mb-4">
+                            Development of a premium residential estate featuring modern amenities and sustainable design principles.
+                        </p>
+                        <a href="#" class="text-primary-brand font-medium hover:underline flex items-center">View Details <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1 duration-300"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-bg-light rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 duration-300 group">
+                    <img src="https://placehold.co/600x400/008080/FFFFFF?text=Project+Beta" alt="Project Beta" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-secondary-accent mb-2">Commercial Hub Construction</h3>
+                        <p class="text-primary-brand text-sm mb-3">Construction & Infrastructure | Lagos, Nigeria</p>
+                        <p class="text-text-dark text-base leading-relaxed mb-4">
+                            Construction of a state-of-the-art commercial and retail complex, designed for bustling urban activity.
+                        </p>
+                        <a href="#" class="text-primary-brand font-medium hover:underline flex items-center">View Details <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1 duration-300"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-bg-light rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 duration-300 group">
+                    <img src="https://placehold.co/600x400/F39C12/FFFFFF?text=Project+Gamma" alt="Project Gamma" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-secondary-accent mb-2">Strategic Mineral Investment</h3>
+                        <p class="text-primary-brand text-sm mb-3">Mineral Resources | Plateau State, Nigeria</p>
+                        <p class="text-text-dark text-base leading-relaxed mb-4">
+                            Key investment in a highly productive tin mining operation, enhancing local and international supply chains.
+                        </p>
+                        <a href="#" class="text-primary-brand font-medium hover:underline flex items-center">View Details <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1 duration-300"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-bg-light rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 duration-300 group">
+                    <img src="https://placehold.co/600x400/2C3E50/F8F8F8?text=Project+Delta" alt="Project Delta" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-secondary-accent mb-2">Public Sector Procurement</h3>
+                        <p class="text-primary-brand text-sm mb-3">Management & Procurement | Federal Capital Territory</p>
+                        <p class="text-text-dark text-base leading-relaxed mb-4">
+                            Successful procurement and management of critical supplies for a major government infrastructure project.
+                        </p>
+                        <a href="#" class="text-primary-brand font-medium hover:underline flex items-center">View Details <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1 duration-300"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-bg-light rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 duration-300 group">
+                    <img src="https://placehold.co/600x400/008080/FFFFFF?text=Project+Epsilon" alt="Project Epsilon" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-secondary-accent mb-2">Bespoke Property Investment</h3>
+                        <p class="text-primary-brand text-sm mb-3">Property Investment & Sales | Port Harcourt, Rivers State</p>
+                        <p class="text-text-dark text-base leading-relaxed mb-4">
+                            Facilitation of a high-value property acquisition and subsequent management for a private investor.
+                        </p>
+                        <a href="#" class="text-primary-brand font-medium hover:underline flex items-center">View Details <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1 duration-300"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-bg-light rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 duration-300 group">
+                    <img src="https://placehold.co/600x400/F39C12/FFFFFF?text=Project+Zeta" alt="Project Zeta" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-secondary-accent mb-2">Road Network Development</h3>
+                        <p class="text-primary-brand text-sm mb-3">Construction & Infrastructure | Edo State, Nigeria</p>
+                        <p class="text-text-dark text-base leading-relaxed mb-4">
+                            Development and upgrade of a critical regional road network, improving connectivity and commerce.
+                        </p>
+                        <a href="#" class="text-primary-brand font-medium hover:underline flex items-center">View Details <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1 duration-300"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center py-16 bg-primary-brand text-white rounded-lg shadow-xl mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold font-display mb-6">Have a Project in Mind?</h2>
+            <p class="text-xl max-w-3xl mx-auto mb-10 opacity-90">
+                Let's discuss how our expertise can bring your vision to life.
+            </p>
+            <a href="contact.html" class="inline-block bg-accent-gold text-white font-bold text-lg py-4 px-10 rounded-full shadow-lg hover:bg-opacity-90 transition duration-300 transform hover:-translate-y-1">
+                Start a Conversation <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </section>
+    </main>
+
+    <footer class="bg-secondary-accent text-white py-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 I & F ASSETS LIMITED. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0; /* Start invisible */
+        }
+        .animation-delay-300 {
+            animation-delay: 0.3s;
+        }
+        .animation-delay-600 {
+            animation-delay: 0.6s;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - I & F ASSETS LIMITED</title>
+    <link rel="icon" href="https://placehold.co/32x32/008080/FFFFFF?text=IF" type="image/png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-brand': '#008080', // Teal/Greenish-Blue from logo
+                        'secondary-accent': '#2C3E50', // Dark Blue/Navy
+                        'accent-gold': '#F39C12', // Soft Gold/Light Orange
+                        'text-dark': '#333333', // Dark Grey for body text
+                        'text-light': '#7F8C8D', // Medium Grey for subtle text
+                        'bg-light': '#F8F8F8', // Off-White/Light Grey for backgrounds
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-bg-light text-text-dark">
+    <header class="bg-primary-brand text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between relative">
+            <h1 class="text-2xl font-display font-bold z-20">I & F ASSETS LIMITED</h1>
+
+            <nav id="desktop-nav" class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-accent-gold transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-accent-gold transition duration-300">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-accent-gold transition duration-300">Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-accent-gold transition duration-300">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-gold transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden text-white text-3xl focus:outline-none z-20" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="mobile-nav" class="hidden md:hidden fixed inset-0 bg-primary-brand/95 backdrop-blur-sm z-10 flex flex-col items-center justify-center space-y-8">
+                <ul class="flex flex-col space-y-6 text-2xl">
+                    <li><a href="index.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Home</a></li>
+                    <li><a href="about.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-hero" class="relative bg-secondary-accent text-white py-24 md:py-40 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://placehold.co/1920x1080/2C3E50/F8F8F8/png?text=Modern+Cityscape'); background-size: cover; background-position: center;"></div>
+            
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <h1 class="text-5xl md:text-7xl font-extrabold font-display leading-tight mb-6 animate-fade-in-up">
+                    Partner with <span class="text-accent-gold">I & F ASSETS</span>
+                </h1>
+                <p class="text-xl md:text-2xl max-w-4xl mx-auto opacity-90 animate-fade-in-up animation-delay-300">
+                    Connect with us to explore unparalleled opportunities in property development, strategic investments, and comprehensive asset management.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact-info-form" class="py-16 bg-white shadow-lg -mt-8 relative z-10 rounded-lg mx-auto max-w-6xl px-6 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="text-center md:text-left">
+                    <h2 class="text-4xl font-bold text-secondary-accent mb-6">Reach Out to Us</h2>
+                    <p class="text-lg text-text-dark mb-8 leading-relaxed">
+                        Whether you have a question about our services, need support, or want to explore partnership opportunities, our team is ready to assist.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start md:items-center bg-bg-light p-4 rounded-lg shadow-sm">
+                            <div class="text-primary-brand text-3xl mr-4 flex-shrink-0"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                            <div>
+                                <h3 class="font-bold text-xl text-secondary-accent mb-1">Our Location</h3>
+                                <p class="text-text-dark">Plot 7, Nyala Close, Tunis Street, Wuse Zone 6, Abuja, FCT, Nigeria.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start md:items-center bg-bg-light p-4 rounded-lg shadow-sm">
+                            <div class="text-primary-brand text-3xl mr-4 flex-shrink-0"><i class="fas fa-phone-alt" aria-hidden="true"></i></div>
+                            <div>
+                                <h3 class="font-bold text-xl text-secondary-accent mb-1">Phone Numbers</h3>
+                                <p class="text-text-dark"><a href="tel:+2348023014333" class="hover:underline">+2348023014333</a></p>
+                                <p class="text-text-dark"><a href="tel:+2348032062005" class="hover:underline">+2348032062005</a></p>
+                            </div>
+                        </div>
+                        <div class="flex items-start md:items-center bg-bg-light p-4 rounded-lg shadow-sm">
+                            <div class="text-primary-brand text-3xl mr-4 flex-shrink-0"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                            <div>
+                                <h3 class="font-bold text-xl text-secondary-accent mb-1">Email Address</h3>
+                                <p class="text-text-dark"><a href="mailto:ifassets@gmail.com" class="hover:underline">ifassets@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-bg-light p-8 rounded-lg shadow-md">
+                    <h2 class="text-4xl font-bold text-secondary-accent mb-6 text-center">Send Us a Message</h2>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-text-dark text-lg font-semibold mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 border border-text-light rounded-md focus:outline-none focus:ring-2 focus:ring-primary-brand" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-text-dark text-lg font-semibold mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 border border-text-light rounded-md focus:outline-none focus:ring-2 focus:ring-primary-brand" placeholder="your.email@example.com" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-text-dark text-lg font-semibold mb-2">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone" class="w-full p-3 border border-text-light rounded-md focus:outline-none focus:ring-2 focus:ring-primary-brand" placeholder="+234 80X XXX XXXX">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-text-dark text-lg font-semibold mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full p-3 border border-text-light rounded-md focus:outline-none focus:ring-2 focus:ring-primary-brand" placeholder="Inquiry about..." required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-text-dark text-lg font-semibold mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full p-3 border border-text-light rounded-md focus:outline-none focus:ring-2 focus:ring-primary-brand" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-accent-gold text-white font-bold text-lg py-3 rounded-md shadow-lg hover:bg-opacity-90 transition duration-300 transform hover:-translate-y-1">
+                                Send Message <i class="fas fa-paper-plane ml-2" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary-accent text-white py-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p>© 2025 I & F ASSETS LIMITED. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileNav = document.getElementById('mobile-nav');
+            const mobileNavLinks = mobileNav.querySelectorAll('.mobile-nav-link');
+
+            if (mobileMenuButton && mobileNav) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileNav.classList.toggle('hidden');
+                    // Change icon
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (mobileNav.classList.contains('hidden')) {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    } else {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    }
+                });
+
+                // Close mobile nav when a link is clicked
+                mobileNavLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileNav.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - I & F ASSETS LIMITED</title>
+    <link rel="icon" href="https://placehold.co/32x32/008080/FFFFFF?text=IF" type="image/png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-brand': '#008080', // Teal/Greenish-Blue from logo
+                        'secondary-accent': '#2C3E50', // Dark Blue/Navy
+                        'accent-gold': '#F39C12', // Soft Gold/Light Orange
+                        'text-dark': '#333333', // Dark Grey for body text
+                        'text-light': '#7F8C8D', // Medium Grey for subtle text
+                        'bg-light': '#F8F8F8', // Off-White/Light Grey for backgrounds
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-bg-light text-text-dark">
+    <header class="bg-primary-brand text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between relative">
+            <h1 class="text-2xl font-display font-bold z-20">I & F ASSETS LIMITED</h1>
+
+            <nav id="desktop-nav" class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-accent-gold transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-accent-gold transition duration-300">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-accent-gold transition duration-300">Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-accent-gold transition duration-300">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-gold transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden text-white text-3xl focus:outline-none z-20">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="mobile-nav" class="hidden md:hidden fixed inset-0 bg-primary-brand/95 backdrop-blur-sm z-10 flex flex-col items-center justify-center space-y-8">
+                <ul class="flex flex-col space-y-6 text-2xl">
+                    <li><a href="index.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Home</a></li>
+                    <li><a href="about.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-gold transition duration-300 mobile-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about-hero" class="relative bg-secondary-accent text-white py-20 md:py-32 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://placehold.co/1920x1080/008080/FFFFFF/png?text=Modern+Building+Background'); background-size: cover; background-position: center;"></div>
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <h1 class="text-5xl md:text-7xl font-extrabold font-display leading-tight mb-4 animate-fade-in-up">
+                    About <span class="text-accent-gold">I & F ASSETS</span> LIMITED
+                </h1>
+                <p class="text-xl md:text-2xl max-w-4xl mx-auto opacity-90 animate-fade-in-up animation-delay-300">
+                    Your trusted partner in Property Development, Estate Management, Investment, and Construction,
+                    committed to building legacies and fostering sustainable growth.
+                </p>
+            </div>
+        </section>
+
+        <section id="our-story" class="py-16 bg-white shadow-lg -mt-8 relative z-10 rounded-lg mx-auto max-w-6xl px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="order-2 md:order-1 text-center md:text-left">
+                    <h2 class="text-4xl font-bold text-secondary-accent mb-4">Our Story</h2>
+                    <h3 class="text-2xl font-semibold text-primary-brand mb-6">Established on Principles of Innovation & Trust</h3>
+                    <p class="text-lg text-text-dark mb-8 leading-relaxed">
+                        I & F ASSETS LIMITED was meticulously established to become a pioneering force across critical sectors. Our journey began with a clear vision: to innovate and lead in property development and estate management. We transform visions into tangible assets and manage diverse real estate portfolios with a commitment to enduring value.
+                    </p>
+                    <h4 class="text-2xl font-semibold text-secondary-accent mb-6 text-center md:text-left">Our Diversified Reach:</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="flex items-start p-4 rounded-lg bg-bg-light shadow-sm">
+                            <div class="text-primary-brand text-3xl mr-4"><i class="fas fa-chart-line"></i></div>
+                            <div>
+                                <h5 class="font-bold text-lg text-secondary-accent">Strategic Investment</h5>
+                                <p class="text-text-light text-sm">Opportunities in financial markets and real property.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start p-4 rounded-lg bg-bg-light shadow-sm">
+                            <div class="text-primary-brand text-3xl mr-4"><i class="fas fa-hard-hat"></i></div>
+                            <div>
+                                <h5 class="font-bold text-lg text-secondary-accent">Construction & Infrastructure</h5>
+                                <p class="text-text-light text-sm">Delivering high-quality, efficient projects.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start p-4 rounded-lg bg-bg-light shadow-sm">
+                            <div class="text-primary-brand text-3xl mr-4"><i class="fas fa-hand-holding-box"></i></div>
+                            <div>
+                                <h5 class="font-bold text-lg text-secondary-accent">Management & Procurement</h5>
+                                <p class="text-text-light text-sm">Streamlining operations and sourcing essential goods.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start p-4 rounded-lg bg-bg-light shadow-sm">
+                            <div class="text-primary-brand text-3xl mr-4"><i class="fas fa-gem"></i></div>
+                            <div>
+                                <h5 class="font-bold text-lg text-secondary-accent">Mineral Resources</h5>
+                                <p class="text-text-light text-sm">Contributing to resource development through mining and supply.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://placehold.co/600x400/2C3E50/F8F8F8?text=Our+History" alt="Our Story Image" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </section>
+
+        <section id="core-pillars" class="py-16 bg-bg-light text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-secondary-accent mb-6">Our Comprehensive Expertise</h2>
+                <p class="text-xl text-text-dark mb-12 max-w-3xl mx-auto">
+                    We excel in diverse domains, each contributing to our holistic approach to asset and wealth creation.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center transition-transform hover:scale-105 duration-300 group">
+                        <div class="text-primary-brand text-6xl mb-6 group-hover:text-accent-gold transition-colors duration-300">
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-secondary-accent mb-3">Property Development & Management</h3>
+                        <p class="text-text-light leading-relaxed">Designing, developing, and managing real estate assets for sustainable growth.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center transition-transform hover:scale-105 duration-300 group">
+                        <div class="text-primary-brand text-6xl mb-6 group-hover:text-accent-gold transition-colors duration-300">
+                            <i class="fa-solid fa-chart-pie"></i> </div>
+                        <h3 class="text-2xl font-semibold text-secondary-accent mb-3">Strategic Investments</h3>
+                        <p class="text-text-light leading-relaxed">Guiding clients through debentures, stocks, bonds, and real property investments.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center transition-transform hover:scale-105 duration-300 group">
+                        <div class="text-primary-brand text-6xl mb-6 group-hover:text-accent-gold transition-colors duration-300">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-secondary-accent mb-3">Construction & Infrastructure</h3>
+                        <p class="text-text-light leading-relaxed">Delivering high-quality construction works from conception to completion.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center transition-transform hover:scale-105 duration-300 group">
+                        <div class="text-primary-brand text-6xl mb-6 group-hover:text-accent-gold transition-colors duration-300">
+                            <i class="fa-solid fa-hands-holding-circle"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-secondary-accent mb-3">Management & Procurement</h3>
+                        <p class="text-text-light leading-relaxed">Streamlining operations and sourcing essential goods and services efficiently.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center transition-transform hover:scale-105 duration-300 group">
+                        <div class="text-primary-brand text-6xl mb-6 group-hover:text-accent-gold transition-colors duration-300">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-secondary-accent mb-3">Mineral Resources</h3>
+                        <p class="text-text-light leading-relaxed">Active in mining and supply of precious stones, gold, tin, and other mineral products.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center transition-transform hover:scale-105 duration-300 group">
+                        <div class="text-primary-brand text-6xl mb-6 group-hover:text-accent-gold transition-colors duration-300">
+                            <i class="fa-solid fa-house-user"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-secondary-accent mb-3">Property Investment & Sales</h3>
+                        <p class="text-text-light leading-relaxed">Expert management and development for profitable land, house, and commercial property ventures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-vision" class="relative py-24 bg-cover bg-center text-white text-center" style="background-image: url('https://placehold.co/1920x600/008080/FFFFFF/png?text=Vision+Statement+Background');">
+            <div class="absolute inset-0 bg-secondary-accent opacity-70 z-0"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <h2 class="text-5xl font-extrabold font-display mb-6">Our Vision</h2>
+                <p class="text-2xl max-w-4xl mx-auto leading-relaxed">
+                    To be the leading and most trusted integrated assets management and development company,
+                    pioneering sustainable growth and creating exceptional value for all stakeholders across Africa.
+                </p>
+            </div>
+        </section>
+
+        <section id="our-values" class="py-16 bg-white rounded-lg shadow-lg mx-auto max-w-6xl -mt-8 relative z-10 px-6 mb-12">
+            <h2 class="text-4xl font-bold text-center text-secondary-accent mb-12">Values That Drive Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex items-start bg-bg-light rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-accent-gold text-4xl mr-5 flex-shrink-0">
+                        <i class="fa-solid fa-handshake-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary-brand mb-2">Integrity & Transparency</h3>
+                        <p class="text-text-dark text-base">Operating with uncompromising honesty and clarity in every interaction and decision.</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-bg-light rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-accent-gold text-4xl mr-5 flex-shrink-0">
+                        <i class="fa-solid fa-lightbulb-on"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary-brand mb-2">Innovation & Adaptability</h3>
+                        <p class="text-text-dark text-base">Embracing new ideas and technologies to continuously evolve and lead the industry.</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-bg-light rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-accent-gold text-4xl mr-5 flex-shrink-0">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary-brand mb-2">Unwavering Excellence</h3>
+                        <p class="text-text-dark text-base">Committed to delivering superior quality and exceeding expectations in all our projects.</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-bg-light rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-accent-gold text-4xl mr-5 flex-shrink-0">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary-brand mb-2">Client-Centric Solutions</h3>
+                        <p class="text-text-dark text-base">Placing our clients at the core of everything we do, ensuring tailored and impactful solutions.</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-bg-light rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-accent-gold text-4xl mr-5 flex-shrink-0">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary-brand mb-2">Sustainable Growth</h3>
+                        <p class="text-text-dark text-base">Building long-term value responsibly, with an eye towards environmental and social impact.</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-bg-light rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-accent-gold text-4xl mr-5 flex-shrink-0">
+                        <i class="fa-solid fa-people-carry-box"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary-brand mb-2">Collaborative Partnership</h3>
+                        <p class="text-text-dark text-base">Fostering strong relationships built on mutual respect and shared objectives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-team" class="py-16 bg-white shadow-lg rounded-lg mx-auto max-w-6xl px-6 mb-12">
+            <h2 class="text-4xl font-bold text-center text-secondary-accent mb-12">Meet Our Leadership</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                <div class="bg-bg-light p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/150x150/F39C12/FFFFFF/png?text=Member1" alt="Team Member 1" class="rounded-full w-36 h-36 mx-auto mb-4 border-4 border-primary-brand">
+                    <h3 class="text-xl font-semibold text-secondary-accent mb-1">John Doe</h3>
+                    <p class="text-primary-brand text-sm mb-3">CEO & Founder</p>
+                    <p class="text-text-light text-sm">Visionary leader driving the company's strategic direction and growth initiatives.</p>
+                </div>
+                <div class="bg-bg-light p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/150x150/F39C12/FFFFFF/png?text=Member2" alt="Team Member 2" class="rounded-full w-36 h-36 mx-auto mb-4 border-4 border-primary-brand">
+                    <h3 class="text-xl font-semibold text-secondary-accent mb-1">Jane Smith</h3>
+                    <p class="text-primary-brand text-sm mb-3">Head of Operations</p>
+                    <p class="text-text-light text-sm">Ensuring seamless execution and operational excellence across all departments.</p>
+                </div>
+                <div class="bg-bg-light p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/150x150/F39C12/FFFFFF/png?text=Member3" alt="Team Member 3" class="rounded-full w-36 h-36 mx-auto mb-4 border-4 border-primary-brand">
+                    <h3 class="text-xl font-semibold text-secondary-accent mb-1">Michael Brown</h3>
+                    <p class="text-primary-brand text-sm mb-3">Chief Investment Officer</p>
+                    <p class="text-text-light text-sm">Expert in identifying and managing high-yield investment opportunities for our clients.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="text-center py-16 bg-primary-brand text-white rounded-lg shadow-xl mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold font-display mb-6">Partner With Pioneers. Build With Confidence.</h2>
+            <p class="text-xl max-w-3xl mx-auto mb-10 opacity-90">
+                Discover the I & F ASSETS difference. We're ready to bring your most ambitious projects to life.
+            </p>
+            <a href="contact.html" class="inline-block bg-accent-gold text-white font-bold text-lg py-4 px-10 rounded-full shadow-lg hover:bg-opacity-90 transition duration-300 transform hover:-translate-y-1">
+                Start Your Project Today <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </section>
+    </main>
+
+    <footer class="bg-secondary-accent text-white py-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 I & F ASSETS LIMITED. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0; /* Start invisible */
+        }
+        .animation-delay-300 {
+            animation-delay: 0.3s;
+        }
+        .animation-delay-600 {
+            animation-delay: 0.6s;
+        }
+    </style>
+</body>
+</html>
