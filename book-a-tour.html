@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Tour - I & F ASSETS LIMITED</title>
+    <link rel="icon" href="https://placehold.co/32x32/C2A478/FFFFFF?text=IF" type="image/png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-brand': '#C2A478',   // New Primary: Warm Gold/Beige
+                        'secondary-accent': '#4A443A', // New Secondary: Deep Warm Charcoal/Brown
+                        'accent-gold': '#A08156',    // New Accent: Richer Gold (for highlights)
+                        'text-dark': '#333333',      // Dark Grey for body text
+                        'text-light': '#7F8C8D',     // Medium Grey for subtle text
+                        'bg-light': '#F8F8F8',       // Off-White/Light Grey for backgrounds
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0; /* Start invisible */
+        }
+        .animation-delay-300 {
+            animation-delay: 0.3s;
+        }
+        .animation-delay-600 {
+            animation-delay: 0.6s;
+        }
+        /* Custom styles for profile images with borders */
+        .profile-img-border {
+            border: 3px solid; /* Placeholder for dynamic color */
+        }
+    </style>
+</head>
+<body class="font-sans bg-bg-light text-text-white">
+    <header class="bg-primary-brand text-text-dark p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between relative">
+            <h1 class="text-2xl font-display font-bold z-20">I & F ASSETS LIMITED</h1>
+
+            <nav id="desktop-nav" class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-primary-brand transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-primary-brand transition duration-300">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-primary-brand transition duration-300">Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-primary-brand transition duration-300">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-primary-brand transition duration-300">Contact</a></li>
+                    <li><a href="book-a-tour.html" class="text-primary-brand border-b-2 border-primary-brand pb-1">Book a Tour</a></li>
+                </ul>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden text-text-dark text-3xl focus:outline-none z-20">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="mobile-nav" class="hidden md:hidden fixed inset-0 bg-primary-brand/95 backdrop-blur-sm z-10 flex flex-col items-center justify-center space-y-8">
+                <ul class="flex flex-col space-y-6 text-2xl">
+                    <li><a href="index.html" class="text-white hover:text-accent-gold transition duration-300 mobile-nav-link">Home</a></li>
+                    <li><a href="about.html" class="text-white hover:text-accent-gold transition duration-300 mobile-nav-link">About Us</a></li>
+                    <li><a href="services.html" class="text-white hover:text-accent-gold transition duration-300 mobile-nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="text-white hover:text-accent-gold transition duration-300 mobile-nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-accent-gold transition duration-300 mobile-nav-link">Contact</a></li>
+                    <li><a href="book-a-tour.html" class="text-white hover:text-accent-gold transition duration-300 mobile-nav-link">Book a Tour</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="book-a-tour-hero" class="relative bg-white py-16 md:py-24 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="bg-cover bg-center h-full w-full" style="background-image: url('images/jason-briscoe-UV81E0oXXWQ-unsplash.jpg');"></div>
+                <div class="absolute inset-0 bg-white opacity-80"></div> </div>
+            
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <p class="text-text-dark text-sm mb-2 font-semibold">BOOKING A TOUR</p>
+                <h2 class="text-4xl md:text-5xl font-extrabold font-display leading-tight text-text-dark">
+                    See it with your eyes.
+                </h2>
+            </div>
+        </section>
+
+        <section class="py-16 bg-bg-light">
+            <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div>
+                    <h3 class="text-xl md:text-2xl font-bold text-text-dark mb-4">See it with your eyes.</h3>
+                    <p class="text-text-dark leading-relaxed mb-6">
+                        Visit a Cosgrove home and experience audacious designs with modern facilities that make life much better, safe and artful. Our team is ready to assist you.
+                    </p>
+
+                    <form action="process_book_tour.php" method="POST" class="space-y-4 bg-white p-6 rounded-lg shadow-md">
+                        <div>
+                            <label for="tour_type" class="block text-sm font-medium text-text-dark mb-1">Cosgrove Smart Estate, Wuye</label>
+                            <select id="tour_type" name="tour_type" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-brand focus:border-primary-brand sm:text-sm">
+                                <option value="">Select Tour Type</option>
+                                <option value="smart-estate">Cosgrove Smart Estate, Wuye</option>
+                                <option value="other-property">Other Property</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-text-dark mb-1">Full Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-brand focus:border-primary-brand sm:text-sm" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-text-dark mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-brand focus:border-primary-brand sm:text-sm" placeholder="your.email@example.com">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-text-dark mb-1">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-brand focus:border-primary-brand sm:text-sm" placeholder="+234 8XX XXX XXXX">
+                        </div>
+                        <div>
+                            <label for="preferred_date" class="block text-sm font-medium text-text-dark mb-1">Preferred Tour Date</label>
+                            <input type="date" id="preferred_date" name="preferred_date" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-brand focus:border-primary-brand sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-text-dark mb-1">Your Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-brand focus:border-primary-brand sm:text-sm" placeholder="Type your message here..."></textarea>
+                        </div>
+                        <input type="text" name="honeypot_field" style="display:none; visibility:hidden; position:absolute; left:-9999px;" tabindex="-1" autocomplete="off">
+                        <button type="submit" class="w-full bg-primary-brand text-white py-3 px-4 rounded-md font-semibold hover:bg-opacity-90 transition duration-300">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+
+                <div class="flex items-center justify-center lg:justify-start">
+                    <img src="images/tolu-olubode-PlBsJ5MybGc-unsplash.jpg" alt="Team meeting" class="rounded-lg shadow-lg w-full h-auto max-w-full lg:max-w-none object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary-accent mb-6">Speak to an expert from the team.</h2>
+                <p class="text-lg text-text-dark mb-12 max-w-4xl mx-auto text-center">
+                    When it comes to finding your ideal home, engaging with Cosgrove's expert advisors is your key to making the perfect choice. Our seasoned professionals understand that a home is more than just a space; it's a reflection of your lifestyle and aspirations. With a deep knowledge of our diverse range of properties and the market, they're here to provide personalized guidance. Whether you're a first-time buyer or an experienced investor, our team is eager to help you navigate the journey, offering tailored advice that empowers you to make informed decisions with confidence.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://via.placeholder.com/100/C2A478/FFFFFF?text=DU" alt="Dr. Chioma Ugwu" class="w-24 h-24 rounded-full object-cover mb-3 profile-img-border border-primary-brand">
+                        <h3 class="text-xl font-semibold text-secondary-accent">Dr. Chioma Ugwu</h3>
+                        <p class="text-text-light text-sm">Director & Corporate Communications</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://via.placeholder.com/100/C2A478/FFFFFF?text=SP" alt="Sakana D. Philip" class="w-24 h-24 rounded-full object-cover mb-3 profile-img-border border-primary-brand">
+                        <h3 class="text-xl font-semibold text-secondary-accent">Sakana D. Philip</h3>
+                        <p class="text-text-light text-sm">Director, Corporate Communications & Branding</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://via.placeholder.com/100/C2A478/FFFFFF?text=BM" alt="QS Bridget .O. Musa" class="w-24 h-24 rounded-full object-cover mb-3 profile-img-border border-primary-brand">
+                        <h3 class="text-xl font-semibold text-secondary-accent">QS Bridget .O. Musa <span class="font-normal">(FNIQS RQS MBA)</span></h3>
+                        <p class="text-text-light text-sm">Director, Quality & Standards</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://via.placeholder.com/100/C2A478/FFFFFF?text=NA" alt="Nafisa Aliyu" class="w-24 h-24 rounded-full object-cover mb-3 profile-img-border border-primary-brand">
+                        <h3 class="text-xl font-semibold text-secondary-accent">Nafisa Aliyu</h3>
+                        <p class="text-text-light text-sm">Head, Digital Marketing</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://via.placeholder.com/100/C2A478/FFFFFF?text=FM" alt="Fatima Mibaka" class="w-24 h-24 rounded-full object-cover mb-3 profile-img-border border-primary-brand">
+                        <h3 class="text-xl font-semibold text-secondary-accent">Fatima Mibaka</h3>
+                        <p class="text-text-light text-sm">Head, Customer Service</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://via.placeholder.com/100/C2A478/FFFFFF?text=BC" alt="Blessing Chinedu-Uzorh" class="w-24 h-24 rounded-full object-cover mb-3 profile-img-border border-primary-brand">
+                        <h3 class="text-xl font-semibold text-secondary-accent">Blessing Chinedu-Uzorh</h3>
+                        <p class="text-text-light text-sm">Head, Health Safety & Environment</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://via.placeholder.com/100/C2A478/FFFFFF?text=TA" alt="Tosin Afolabi" class="w-24 h-24 rounded-full object-cover mb-3 profile-img-border border-primary-brand">
+                        <h3 class="text-xl font-semibold text-secondary-accent">Tosin Afolabi</h3>
+                        <p class="text-text-light text-sm">Head of Project Monitoring Office</p>
+                    </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary-brand text-white py-12 md:py-16">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+            <div>
+                <h3 class="text-2xl font-display font-bold mb-4">I & F ASSETS LIMITED</h3>
+                <p class="text-white text-sm leading-relaxed">
+                    Empowering growth through strategic property development, astute investments, and comprehensive asset management in Nigeria and beyond.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-secondary-accent">Quick Links</h3>
+                <ul class="space-y-2 text-white">
+                    <li><a href="index.html" class="hover:text-accent-gold transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-accent-gold transition duration-300">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-accent-gold transition duration-300">Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-accent-gold transition duration-300">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-gold transition duration-300">Contact</a></li>
+                    <li><a href="book-a-tour.html" class="hover:text-accent-gold transition duration-300">Book a Tour</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-secondary-accent">Contact Info</h3>
+                <div class="space-y-2 text-white">
+                    <p class="flex items-start md:items-center justify-center md:justify-start">
+                        <i class="fas fa-map-marker-alt text-white text-lg mr-2 mt-1 md:mt-0" aria-hidden="true"></i>
+                        Plot 7, Nyala Close, Tunis Street, Wuse Zone 6, Abuja, FCT, Nigeria.
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start">
+                        <i class="fas fa-phone-alt text-white text-lg mr-2" aria-hidden="true"></i>
+                        <a href="tel:+2348023014333" class="hover:underline">+2348023014333</a>
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start">
+                        <i class="fas fa-phone-alt text-white text-lg mr-2" aria-hidden="true"></i>
+                        <a href="tel:+2348032062005" class="hover:underline">+2348032062005</a>
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start">
+                        <i class="fas fa-envelope text-white text-lg mr-2" aria-hidden="true"></i>
+                        <a href="mailto:ifassets@gmail.com" class="hover:underline">contact@ifassets.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-secondary-accent">Follow Us</h3>
+                <div class="flex justify-center md:justify-start space-x-4 text-2xl">
+                    <a href="#" class="hover:text-accent-gold transition duration-300" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-accent-gold transition duration-300" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="hover:text-accent-gold transition duration-300" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-accent-gold transition duration-300" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-secondary-accent/50 mt-8 pt-8 text-center text-white text-sm">
+            <p>&copy; 2025 I & F ASSETS LIMITED. All rights reserved.</p>
+            <p class="mt-2">Designed and Developed by Fujilla Ai Team</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Ensure your main.js handles the mobile menu toggle correctly
+        // and also any form feedback logic if you build a backend for this form.
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileNav = document.getElementById('mobile-nav');
+            const mobileNavLinks = mobileNav.querySelectorAll('.mobile-nav-link');
+
+            if (mobileMenuButton && mobileNav) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileNav.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (mobileNav.classList.contains('hidden')) {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    } else {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    }
+                });
+
+                mobileNavLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileNav.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    });
+                });
+            }
+
+            // You can add form feedback logic here for book-a-tour form later
+            // (similar to what we discussed for contact.html)
+        });
+    </script>
+</body>
+</html>
