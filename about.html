@@ -3,31 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - I & F ASSETS LIMITED</title>
-    <link rel="icon" href="https://placehold.co/32x32/008080/FFFFFF?text=IF" type="image/png">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>I & F ASSETS LIMITED</title> <link rel="icon" href="https://placehold.co/32x32/C2A478/FFFFFF?text=IF" type="image/png"> <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primary-brand': '#008080', // Teal/Greenish-Blue from logo
-                        'secondary-accent': '#2C3E50', // Dark Blue/Navy
-                        'accent-gold': '#F39C12', // Soft Gold/Light Orange
-                        'text-dark': '#333333', // Dark Grey for body text
-                        'text-light': '#7F8C8D', // Medium Grey for subtle text
-                        'bg-light': '#F8F8F8', // Off-White/Light Grey for backgrounds
+                        'primary-brand': '#C2A478',   // New Primary: Warm Gold/Beige
+                        'secondary-accent': '#4A443A', // New Secondary: Deep Warm Charcoal/Brown
+                        'accent-gold': '#A08156',    // New Accent: Richer Gold (for highlights)
+                        'text-dark': '#333333',      // Dark Grey for body text
+                        'text-light': '#7F8C8D',     // Medium Grey for subtle text
+                        'bg-light': '#F8F8F8',       // Off-White/Light Grey for backgrounds
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -37,6 +25,32 @@
             }
         }
     </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0; /* Start invisible */
+        }
+        .animation-delay-300 {
+            animation-delay: 0.3s;
+        }
+        .animation-delay-600 {
+            animation-delay: 0.6s;
+        }
+    </style>
 </head>
 <body class="font-sans bg-bg-light text-text-dark">
     <header class="bg-primary-brand text-white p-4 shadow-md sticky top-0 z-50">
